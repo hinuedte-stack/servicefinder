@@ -1,0 +1,48 @@
+========================================
+  ServiceFinder - Browser Access Setup
+========================================
+
+আপনার Website Browser এ Direct Link দিয়ে দেখতে চান?
+
+এই 3 টি File Run করুন (কোনো order এ):
+
+1. show_ip.bat
+   → আপনার IP address জানাবে
+   → Browser automatically open করবে
+
+2. fix_apache_config.bat
+   → Apache config file খুলবে
+   → Instruction দেখাবে কিভাবে fix করতে হবে
+
+3. setup_firewall.bat
+   → Right-click → "Run as administrator"
+   → Firewall automatically setup করবে
+
+========================================
+Step-by-Step:
+========================================
+
+1. XAMPP Control Panel এ Apache Start করুন
+
+2. show_ip.bat double-click করুন
+   → IP address note করুন
+
+3. fix_apache_config.bat double-click করুন
+   → Instruction follow করুন
+   → Apache restart করুন
+
+4. setup_firewall.bat run করুন (as admin)
+
+5. Browser এ যান:
+   http://YOUR_IP/servicefinder
+   
+   (YOUR_IP = show_ip.bat এ দেখানো IP)
+
+========================================
+Detailed Guide:
+========================================
+
+BROWSER_ACCESS_SIMPLE.md file এ বিস্তারিত আছে!
+
+========================================
+

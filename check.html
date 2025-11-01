@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ServiceFinder - Quick Check</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .box {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 { color: #007bff; }
+        h2 { color: #28a745; border-bottom: 2px solid #28a745; padding-bottom: 10px; }
+        .step {
+            background: #e7f3ff;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 4px solid #007bff;
+            border-radius: 4px;
+        }
+        .warning {
+            background: #fff3cd;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 4px solid #ffc107;
+            border-radius: 4px;
+        }
+        .success {
+            background: #d4edda;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 4px solid #28a745;
+            border-radius: 4px;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover { text-decoration: underline; }
+        .btn {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px 5px;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>🚀 ServiceFinder - Setup Check</h1>
+        <p>This page helps you check if your XAMPP setup is correct.</p>
+    </div>
+
+    <div class="box">
+        <h2>Step 1: Check XAMPP</h2>
+        <div class="step">
+            <strong>✓ Check XAMPP Control Panel:</strong>
+            <ul>
+                <li>Apache should be <span style="color:green;">GREEN (Running)</span></li>
+                <li>MySQL should be <span style="color:green;">GREEN (Running)</span></li>
+            </ul>
+            <p>If they are RED, click "Start" button for each.</p>
+        </div>
+    </div>
+
+    <div class="box">
+        <h2>Step 2: Test PHP</h2>
+        <div class="step">
+            <p><strong>Click below to test if PHP is working:</strong></p>
+            <a href="test.php" class="btn">Test PHP & Database</a>
+            <a href="index.php" class="btn">Go to Homepage</a>
+        </div>
+        <div class="warning">
+            <strong>⚠️ Important:</strong> Don't run PHP files from command line. Use browser instead!
+            <br><code>http://localhost/servicefinder/test.php</code>
+        </div>
+    </div>
+
+    <div class="box">
+        <h2>Step 3: Check Database</h2>
+        <div class="step">
+            <strong>Open phpMyAdmin:</strong>
+            <br><a href="http://localhost/phpmyadmin" target="_blank">http://localhost/phpmyadmin</a>
+            <br><br>
+            <strong>Check if database exists:</strong>
+            <ul>
+                <li>Look for <code>servicefinder</code> in left sidebar</li>
+                <li>If not found, you need to create it</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="box">
+        <h2>Step 4: Create Database (If Needed)</h2>
+        <div class="step">
+            <strong>Method 1: Using SQL File</strong>
+            <ol>
+                <li>Open phpMyAdmin: <a href="http://localhost/phpmyadmin" target="_blank">Click here</a></li>
+                <li>Click "SQL" tab at the top</li>
+                <li>Open <code>database_setup.sql</code> file from your project folder</li>
+                <li>Copy ALL content and paste in phpMyAdmin</li>
+                <li>Click "Go" button</li>
+            </ol>
+            <br>
+            <strong>Method 2: Manual Creation</strong>
+            <ol>
+                <li>Open phpMyAdmin</li>
+                <li>Click "New" on left sidebar</li>
+                <li>Database name: <code>servicefinder</code></li>
+                <li>Collation: <code>utf8_general_ci</code></li>
+                <li>Click "Create"</li>
+                <li>Then run SQL from <code>database_setup.sql</code></li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="box">
+        <h2>Step 5: Test Website</h2>
+        <div class="success">
+            <strong>✅ If everything is set up correctly:</strong>
+            <ul>
+                <li><a href="index.php">Homepage</a> should load</li>
+                <li><a href="test.php">Test Page</a> should show all green checkmarks</li>
+                <li><a href="login.php">Login Page</a> should work</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="box">
+        <h2>Common URLs</h2>
+        <div class="step">
+            <ul>
+                <li><strong>Homepage:</strong> <a href="index.php">index.php</a></li>
+                <li><strong>Test Page:</strong> <a href="test.php">test.php</a></li>
+                <li><strong>Login:</strong> <a href="login.php">login.php</a></li>
+                <li><strong>Signup:</strong> <a href="signup.php">signup.php</a></li>
+                <li><strong>Search:</strong> <a href="search.php">search.php</a></li>
+                <li><strong>phpMyAdmin:</strong> <a href="http://localhost/phpmyadmin" target="_blank">http://localhost/phpmyadmin</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="box">
+        <h2>Default Login Credentials</h2>
+        <div class="step">
+            <p><strong>Admin Account:</strong></p>
+            <ul>
+                <li>Username: <code>admin</code></li>
+                <li>Password: <code>admin123</code></li>
+            </ul>
+            <p><strong>User Account:</strong></p>
+            <ul>
+                <li>Username: <code>user</code></li>
+                <li>Password: <code>user123</code></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="box warning">
+        <h2>❌ Still Not Working?</h2>
+        <p><strong>Check these:</strong></p>
+        <ol>
+            <li>Project folder is in: <code>C:\xampp\htdocs\servicefinder\</code></li>
+            <li>Apache is running (green in XAMPP)</li>
+            <li>MySQL is running (green in XAMPP)</li>
+            <li>Database <code>servicefinder</code> exists in phpMyAdmin</li>
+            <li>Browser URL: <code>http://localhost/servicefinder/</code></li>
+        </ol>
+        <p><strong>Open <a href="test.php">test.php</a> to see detailed error messages!</strong></p>
+    </div>
+</body>
+</html>
+

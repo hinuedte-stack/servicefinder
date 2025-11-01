@@ -1,0 +1,84 @@
+===========================================
+   ServiceFinder - Quick Start Guide
+===========================================
+
+❌ ERROR: 'php' is not recognized
+
+This is NORMAL! You don't need to run PHP from command line.
+
+✅ CORRECT WAY: Use Browser with XAMPP
+===========================================
+
+STEP 1: Start XAMPP
+-------------------
+1. Open XAMPP Control Panel
+2. Start Apache (click Start - wait until GREEN)
+3. Start MySQL (click Start - wait until GREEN)
+
+STEP 2: Open in Browser
+-----------------------
+Copy and paste this URL in your browser:
+
+    http://localhost/servicefinder/check.html
+
+Or:
+
+    http://localhost/servicefinder/test.php
+
+STEP 3: Create Database
+----------------------
+1. Open: http://localhost/phpmyadmin
+2. Click "SQL" tab
+3. Open database_setup.sql file
+4. Copy all content
+5. Paste in phpMyAdmin SQL box
+6. Click "Go"
+
+STEP 4: Test Website
+-------------------
+Visit: http://localhost/servicefinder/index.php
+
+===========================================
+   Your Project Location
+===========================================
+
+Make sure your files are in:
+    C:\xampp\htdocs\servicefinder\
+
+All PHP files should be there:
+    ✓ index.php
+    ✓ test.php
+    ✓ login.php
+    ✓ signup.php
+    ✓ add_services.php
+    etc.
+
+===========================================
+   Default Login
+===========================================
+
+Admin:
+    Username: admin
+    Password: admin123
+
+User:
+    Username: user
+    Password: user123
+
+===========================================
+   Important Notes
+===========================================
+
+✗ DON'T run PHP files from command line
+✓ DO use browser: http://localhost/servicefinder/
+
+✗ DON'T double-click PHP files
+✓ DO open them in browser via XAMPP
+
+If you see error in browser, open:
+    http://localhost/servicefinder/test.php
+    
+It will show you exactly what's wrong!
+
+===========================================
+

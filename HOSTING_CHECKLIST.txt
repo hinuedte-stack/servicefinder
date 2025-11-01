@@ -1,0 +1,146 @@
+========================================
+  Hosting Setup Checklist - ServiceFinder
+========================================
+
+⚠️ IMPORTANT: GitHub Pages PHP Support করে না!
+   → Separate PHP hosting provider use করতে হবে
+
+========================================
+  Step 1: Choose Hosting Provider
+========================================
+
+Recommended: 000webhost (সবচেয়ে সহজ)
+→ https://www.000webhost.com/
+
+Alternatives:
+- InfinityFree
+- Freehostia
+- AwardSpace
+
+========================================
+  Step 2: Account & Website Create
+========================================
+
+[ ] Sign up করুন hosting provider এ
+[ ] Free account create করুন
+[ ] New website create করুন
+[ ] Free subdomain select করুন
+    → Example: yourname.000webhostapp.com
+
+========================================
+  Step 3: Database Setup
+========================================
+
+[ ] Database create করুন (hosting dashboard থেকে)
+[ ] Database name note করুন
+[ ] Database username note করুন
+[ ] Database password note করুন
+[ ] phpMyAdmin এ যান
+[ ] database_setup.sql import করুন
+
+========================================
+  Step 4: Files Prepare করুন
+========================================
+
+[ ] db.php file edit করুন:
+    - Hosting এর database credentials add করুন
+    - Server: usually "localhost"
+    - Username: hosting এর database username
+    - Password: hosting এর database password
+    - Database name: hosting এর database name
+
+[ ] Error display off করুন (production):
+    - error_reporting(0);
+    - ini_set('display_errors', 0);
+
+========================================
+  Step 5: Files Upload করুন
+========================================
+
+Files to UPLOAD:
+[ ] index.php
+[ ] login.php
+[ ] signup.php
+[ ] add_services.php
+[ ] search.php
+[ ] about.php
+[ ] contact.php
+[ ] logout.php
+[ ] db.php (updated with hosting credentials)
+[ ] style.css
+[ ] script.js (if exists)
+[ ] All PHP files
+
+Files to NOT upload:
+[ ] .bat files
+[ ] .md files
+[ ] .txt files
+[ ] database_setup.sql (already imported)
+
+========================================
+  Step 6: Test Website
+========================================
+
+[ ] Website URL visit করুন
+[ ] Homepage loads হচ্ছে?
+[ ] Database connection works?
+[ ] Login works?
+[ ] Signup works?
+[ ] Services add/display works?
+
+========================================
+  Common Issues & Solutions
+========================================
+
+❌ Database connection failed
+   → Credentials verify করুন
+   → Database name correct আছে?
+
+❌ 404 Not Found
+   → Files public_html folder এ আছে?
+   → index.php আছে?
+
+❌ 500 Internal Server Error
+   → PHP version check করুন
+   → Error logs check করুন
+
+========================================
+  Important Notes
+========================================
+
+✅ Security:
+   - Strong passwords use করুন
+   - Database credentials secure রাখুন
+   - Error messages hide করুন (production)
+
+✅ Limitations:
+   - Free hosting এ ads show হতে পারে
+   - Performance slower হতে পারে
+   - Limited storage/bandwidth
+
+✅ Backup:
+   - Code GitHub এ push করুন backup হিসেবে
+   - Database regularly backup নিন
+
+========================================
+  After Hosting
+========================================
+
+Website URL:
+→ https://yourname.000webhostapp.com/servicefinder
+
+Now accessible from:
+✅ Any device (phone, tablet, laptop)
+✅ Anywhere (internet connection থাকলে)
+✅ 24/7 online
+
+========================================
+  Help Files
+========================================
+
+📖 HOSTING_GUIDE.md - Complete detailed guide
+📋 db_hosting_example.php - Database config example
+🚀 prepare_for_hosting.bat - Preparation helper
+
+========================================
+

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ServiceFinder - Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        
+        h1 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+        
+        .icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        
+        .warning-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            text-align: left;
+        }
+        
+        .warning-box h3 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+        
+        .warning-box ul {
+            margin-left: 20px;
+            color: #856404;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin: 10px;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn-secondary {
+            background: #6c757d;
+        }
+        
+        .btn-secondary:hover {
+            background: #5a6268;
+            box-shadow: 0 10px 25px rgba(108, 117, 125, 0.4);
+        }
+        
+        .info-box {
+            background: #e7f3ff;
+            border-left: 4px solid #007bff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            text-align: left;
+        }
+        
+        .info-box h3 {
+            color: #004085;
+            margin-bottom: 10px;
+        }
+        
+        .info-box p {
+            color: #004085;
+            margin: 0;
+        }
+        
+        .hosting-links {
+            margin-top: 30px;
+        }
+        
+        .hosting-links a {
+            display: block;
+            margin: 10px 0;
+            padding: 12px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #495057;
+            transition: background 0.3s;
+        }
+        
+        .hosting-links a:hover {
+            background: #e9ecef;
+        }
+        
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #dee2e6;
+            color: #6c757d;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">🛠️</div>
+        <h1>ServiceFinder</h1>
+        
+        <div class="warning-box">
+            <h3>⚠️ Important Notice</h3>
+            <p><strong>GitHub Pages doesn't support PHP!</strong></p>
+            <p>This website requires PHP and MySQL to function properly. GitHub Pages only supports static websites.</p>
+        </div>
+        
+        <div class="info-box">
+            <h3>ℹ️ What is ServiceFinder?</h3>
+            <p>ServiceFinder is a platform where users can search for services (Plumber, Doctor, Tutor, etc.) and admins can add their services.</p>
+            <p style="margin-top: 10px;">This requires a PHP hosting server to run.</p>
+        </div>
+        
+        <div class="hosting-links">
+            <h3 style="margin-bottom: 15px; color: #495057;">🚀 Free PHP Hosting Options:</h3>
+            
+            <a href="https://www.000webhost.com/" target="_blank">
+                <strong>000webhost</strong> - Easy setup, free subdomain
+            </a>
+            
+            <a href="https://www.infinityfree.net/" target="_blank">
+                <strong>InfinityFree</strong> - Unlimited bandwidth, free subdomain
+            </a>
+            
+            <a href="https://www.freehostia.com/" target="_blank">
+                <strong>Freehostia</strong> - Reliable free hosting
+            </a>
+        </div>
+        
+        <div style="margin-top: 30px;">
+            <a href="https://github.com/YOUR_USERNAME/servicefinder" class="btn" target="_blank">
+                📦 View Source Code on GitHub
+            </a>
+            <a href="HOSTING_GUIDE.md" class="btn btn-secondary">
+                📖 View Hosting Guide
+            </a>
+        </div>
+        
+        <div class="footer">
+            <p><strong>To run this website:</strong></p>
+            <p>1. Use free PHP hosting (see links above)</p>
+            <p>2. Or run locally with XAMPP</p>
+            <p>3. See HOSTING_GUIDE.md for detailed instructions</p>
+        </div>
+    </div>
+    
+    <script>
+        // Auto-redirect if hosting URL is set
+        // Uncomment and update if you have hosting URL
+        /*
+        const hostingUrl = 'https://yourname.000webhostapp.com';
+        if (hostingUrl) {
+            setTimeout(() => {
+                window.location.href = hostingUrl;
+            }, 5000);
+        }
+        */
+    </script>
+</body>
+</html>
+
